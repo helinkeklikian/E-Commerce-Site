@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <!--CSS Styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="Content/site.css">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> 
+    <!--Java Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    
+  
+</head>
+<body>
+<!--Navbar begin-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="Home.html">My Shop</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Menü">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+              
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                            <a class="nav-link" href="Register.html"><span class="fa fa-user-plus mr-2"></span>Kayıt Ol</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="Login.html"><span class="fa fa-sign-in-alt mr-2"></span>Giriş</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user mr-2"></span>Profil</a>
+                        <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                            <a class="dropdown-item" href="MyProfile.html">Profilimi Görüntüle</a>
+                            <a class="dropdown-item" href="Addresses.html">Adreslerim</a>
+                            <a class="dropdown-item" href="Orders.html">Siparişlerim</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-cart-plus mr-2"></span>Sepetim</a>
+                            <div class="dropdown-menu" aria-labelledby="ddlCart">
+                                <a class="dropdown-item" href="Product.html">Ürün1</a>
+                                <a class="dropdown-item" href="Product.html">Ürün2</a>
+                                <a class="dropdown-item" href="Product.html">Ürün3</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="Cart.html">Sepete Git</a>
+                            </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-envelope mr-2"></span>Mesajlar</a>
+                                <div class="dropdown-menu" aria-labelledby="ddlMessages">
+                                    <a class="dropdown-item" href="Messages.html">Mesaj 1</a>
+                                    <a class="dropdown-item" href="Messages.html">Mesaj 2</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="Messages.html">Mesajlar</a>
+                                </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="Logout.html"><span class="fa fa-sign-out-alt mr-2"></span>Çıkış</a>
+                    </li>
+            </ul>
+            
+        </div>
+    </nav>
+
+<!--Navbar end-->
+<div class="container">
+    <!--Content begin-->
+   <div class="row mt-4 mb-2">
+       <div class="col-md-12">
+           <h2>Ödeme Sayfası</h2><hr>
+        </div>
+   </div>
+  <div class="row my-2">
+       <div class="col-md-2 text-center">
+           <h2>
+         <span class="fa fa-credit-card fa-4x text-success"></span>
+          </h2>
+       </div>
+       <div class="col-md-10">
+        <div class="form-group row">
+          <label class="col-md-2 text-danger">Ad &amp; Soyad:</label>
+          <div class="col-md-10">
+          <input type="text" class="form-control" placeholder="Ad Soyad"> 
+          </div>
+        </div>
+
+         <div class="form-group row">
+            <label class="col-md-2 text-danger">Teslimat Adresi:</label>
+            <div class="col-md-4">
+             <select class="form-control dropdown">
+                 <option value="11">Ev</option>
+                 <option value="12">İş</option>
+                 <option value="13">Diğer</option>
+             </select>
+            </div>
+         </div>
+
+        <div class="form-group row">
+            <label class="col-md-2 text-danger">Fatura Adresi:</label>
+            <div class="col-md-4">
+                <select class="form-control dropdown">
+                    <option value="11">Ev</option>
+                    <option value="12">İş</option>
+                    <option value="13">Diğer</option>
+                </select>
+             </div>
+        </div>   
+        <hr>
+        <div class="form-group row">
+             <label class="col-md-2 text-danger">Kart Numarası:</label>
+             <div class="col-md-10">
+                <input type="text" class="form-control" placeholder="0000 0000 0000 0000" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+             </div>
+        </div>
+        <div class="form-group row">
+                <label class="col-md-2 text-danger">CVC:</label>
+                <div class="col-md-10">
+                   <input type="text" class="form-control" placeholder="000" pattern="[0-9]{3}">
+                </div>
+        </div>
+        <div class="form-group row">
+                <label class="col-md-2 text-danger">Son Kullanma Tarihi:</label>
+                <div class="col-md-2">
+                   <select class="form-control dropdown">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                   </select>
+                </div>
+                <div class="col-md-2">
+                        <select class="form-control dropdown">
+                         <option value="2018">2018</option>
+                         <option value="2019">2019</option>
+                         <option value="2020">2020</option>
+                       
+                        </select>
+                     </div>
+        </div>
+       </div>
+      
+    </div>
+
+    <div class="row my-2">
+        <div class="col-md-12 text-right">
+          <a href="#" class="btn btn-success">
+              <span class="fa fa-credit-card mr-2"></span>Ödemeyi Tamamla
+          </a>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-10 offset-md-2">
+           <h1 class="text-success"><span class="fa fa-check"></span> <b>Ödeme Başarılı</b></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur quam asperiores adipisci provident? Animi labore, ea voluptates expedita aliquam porro cumque? Beatae enim quis recusandae adipisci impedit aliquam ab.</p>
+        </div>
+        <div class="col-md-10 offset-md-2">
+                <h1 class="text-danger"><span class="fa fa-window-close"></span> <b>Ödeme Başarısız</b></h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequuntur quam asperiores adipisci provident? Animi labore, ea voluptates expedita aliquam porro cumque? Beatae enim quis recusandae adipisci impedit aliquam ab.</p>
+             </div>
+    </div>
+ 
+    <!--Content end-->
+</div>
+    <!--Footer begin-->
+    <div class="card card-default text-center">
+     <div class="card-body">
+         <h5 class="card-title">My Shop Website</h5>
+         <div>
+         <a href="#" class="btn text-primary"></a>
+         <a href="#" class="btn text-danger"></a>
+         <a href="#" class="btn text-primary"></a>
+        </div>
+         <a href="#" class="btn btn-info btn-sm">
+             <span class="fa fa-at mr-2"></span>E-posta Gönder
+         </a>
+     </div>
+     <div class="card-footer">
+         <p>Designed by Helin Keklikyan</p>
+     </div>
+    </div>
+    <!--Footer end-->
+</body>
+</html>

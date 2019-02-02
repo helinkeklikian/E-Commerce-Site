@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <!--CSS Styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="Content/site.css">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> 
+    <!--Java Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    
+  
+</head>
+<body>
+<!--Navbar begin-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="Home.html">My Shop</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Menü">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+              
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                            <a class="nav-link" href="Register.html"><span class="fa fa-user-plus mr-2"></span>Kayıt Ol</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="Login.html"><span class="fa fa-sign-in-alt mr-2"></span>Giriş</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user mr-2"></span>Profil</a>
+                        <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                            <a class="dropdown-item" href="MyProfile.html">Profilimi Görüntüle</a>
+                            <a class="dropdown-item" href="Addresses.html">Adreslerim</a>
+                            <a class="dropdown-item" href="Orders.html">Siparişlerim</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-cart-plus mr-2"></span>Sepetim</a>
+                            <div class="dropdown-menu" aria-labelledby="ddlCart">
+                                <a class="dropdown-item" href="Product.html">Ürün1</a>
+                                <a class="dropdown-item" href="Product.html">Ürün2</a>
+                                <a class="dropdown-item" href="Product.html">Ürün3</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="Cart.html">Sepete Git</a>
+                            </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-envelope mr-2"></span>Mesajlar</a>
+                                <div class="dropdown-menu" aria-labelledby="ddlMessages">
+                                    <a class="dropdown-item" href="Messages.html">Mesaj 1</a>
+                                    <a class="dropdown-item" href="Messages.html">Mesaj 2</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="Messages.html">Mesajlar</a>
+                                </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="Logout.html"><span class="fa fa-sign-out-alt mr-2"></span>Çıkış</a>
+                    </li>
+            </ul>
+            
+        </div>
+    </nav>
+<!--Navbar end-->
+
+<div class="container">
+    <!--Content begin-->
+    <div class="row mt-4">
+            <div class="col-md-12 my-4">
+                   <h2>Adreslerim</h2>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+           <table class="table table-striped table-hover text-center table-sm">
+               <thead>
+                   <tr>
+<td>Adres Tanım</td>
+<td>Adres Detay</td>
+<td></td>
+
+                   </tr>
+               </thead>
+               <tbody>
+                    <tr>
+<td>Ev</td>
+<td>Bilezikçi sok. No:54 İstanbul</td>
+<td>
+    <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#editModal">
+        <span class="fa fa-edit"></span>
+    </button>
+    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
+            <span class="fa fa-trash"></span>
+        </button>
+</td>
+                    </tr>
+                    <tr>
+                            <td>İş</td>
+                            <td>Bilezikçi sok. No:54 İstanbul</td>
+                            <td>
+                                <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#editModal">
+                                    <span class="fa fa-edit"></span>
+                                </button>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                            </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>Arkadaş</td>
+                                                        <td>Bilezikçi sok. No:54 İstanbul</td>
+                                                        <td>
+                                                            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#editModal">
+                                                                <span class="fa fa-edit"></span>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
+                                                                    <span class="fa fa-trash"></span>
+                                                                </button>
+                                                        </td>
+                                                                            </tr>
+               </tbody>
+         
+         
+          </table>
+       </div>
+    </div>
+
+    <!-- Modal Düzenle -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="modaltitleid" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adres Düzenle</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">    
+                        <input type="text" name="adres_tanim" id="adres_tanim" class="form-control" placeholder="Adres Tanım">
+                    </div>
+                    <div class="form-group">    
+                            <textarea cols="30" rows="4" name="adres_detay" id="adres_detay" class="form-control" placeholder="Adres Detay"></textarea>
+                        </div>
+                       
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="fa fa-remove mr-2"></span>Kapat</button>
+                    <button type="button" class="btn btn-warning"><span class="fa fa-save mr-2"></span>Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Sil-->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sil</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                            <div class="col-md-4 md-offset-1">
+                                <center>
+                                    <span class="fa fa-trash text-danger fa-2x mr-2"></span>
+                                </center>
+                            </div>
+                            <div class="col-md-7 text-center">
+                                <p>Adresi silmek istediğinize emin misiniz?</p>
+                            </div>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Hayır</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Evet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Content end-->
+</div>
+    <!--Footer begin-->
+    <div class="card card-default fixed-bottom text-center">
+     <div class="card-body">
+         <h5 class="card-title">My Shop Website</h5>
+         <div>
+         <a href="#" class="btn text-primary"></a>
+         <a href="#" class="btn text-danger"></a>
+         <a href="#" class="btn text-primary"></a>
+        </div>
+         <a href="#" class="btn btn-info btn-sm">
+             <span class="fa fa-at mr-2"></span>E-posta Gönder
+         </a>
+     </div>
+     <div class="card-footer">
+         <p>Designed by Helin Keklikyan</p>
+     </div>
+    </div>
+    <!--Footer end-->
+
+ 
+
+
+
+
+</html>
